@@ -3,7 +3,6 @@
   <h6>Scenario 1 - Raise me to the power of 4</h6>
   <span>{{ 10 | power: 4 }}</span>
   <h6>Scenario 2 - Shorthand me</h6>
-  <!-- Had to remove commas to work, fix? -->
   <span>{{ 43893843 | shorthand }}</span>
   <h6>Scenario 3 - Raise me to the power of 6 then shorthand</h6>
   <span>{{ 13 | power: 6 | shorthand }}</span>
@@ -12,11 +11,13 @@
 <div class="block">
   <h1>Euro</h1>
   <h6>One Million USD in Euros is:</h6>
-  <span>1,000,000</span>
+  <span>{{ 1000000 | usdToEur }}</span>
 
   <h6>573,983 USD in Euros is:</h6>
-  <span>573,983</span>
+  <span>{{ 573983 | usdToEur }}</span>
 
   <h6>5,773,983 USD in Euros is then shorthand</h6>
-  <span>5,773,983</span>
+  <span>{{ 5773983 | usdToEur | shorthand }}</span>
 </div>
+
+<!-- Had to remove commas in numbers to work, fix? -->

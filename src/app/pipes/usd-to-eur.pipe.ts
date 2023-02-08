@@ -5,6 +5,6 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class UsdToEurPipe implements PipeTransform {
   transform(value: number): number {
-    return value * 0.93;
+    return Math.round(100 * (value * 0.93)) / 100;
   }
 }
