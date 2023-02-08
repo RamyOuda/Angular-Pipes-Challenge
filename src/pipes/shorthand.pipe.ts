@@ -2,6 +2,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
   name: 'shorthand',
+  standalone: true,
 })
 export class ShorthandPipe implements PipeTransform {
   transform(value: number): string {
