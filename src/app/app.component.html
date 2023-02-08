@@ -1,21 +1,25 @@
 <div class="block">
   <h1>USD</h1>
-  <h6>Scenario 1 - Raise me to the power of 4</h6>
+
+  <h4>Scenario 1 - Raise me to the power of 4</h4>
   <span>{{ 10 | power: 4 }}</span>
-  <h6>Scenario 2 - Shorthand me</h6>
+
+  <h4>Scenario 2 - Shorthand me</h4>
   <span>{{ 43893843 | shorthand }}</span>
-  <h6>Scenario 3 - Raise me to the power of 6 then shorthand</h6>
+
+  <h4>Scenario 3 - Raise me to the power of 6 then shorthand</h4>
   <span>{{ 13 | power: 6 | shorthand }}</span>
 </div>
 
 <div class="block">
   <h1>Euro</h1>
-  <h6>One Million USD in Euros is:</h6>
+
+  <h4>One Million USD in Euros is:</h4>
   <span>{{ 1000000 | usdToEur | currency: 'EUR' }}</span>
 
-  <h6>573,983 USD in Euros is:</h6>
+  <h4>573,983 USD in Euros is:</h4>
   <span>{{ 573983 | usdToEur | currency: 'EUR' }}</span>
 
-  <h6>5,773,983 USD in Euros is then shorthand</h6>
+  <h4>5,773,983 USD in Euros is then shorthand</h4>
   <span>{{ 5773983 | usdToEur | shorthand }}</span>
 </div>
