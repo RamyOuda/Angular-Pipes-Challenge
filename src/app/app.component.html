@@ -2,24 +2,32 @@
   <h1>USD</h1>
 
   <h4>Scenario 1 - Raise me to the power of 4</h4>
-  <span>{{ 10 | power: 4 }}</span>
+  <span>10 &rarr; {{ 10 | power: 4 }}</span>
 
   <h4>Scenario 2 - Shorthand me</h4>
-  <span>{{ 43893843 | shorthand }}</span>
+  <span>43,893,843 &rarr; {{ 43893843 | shorthand }}</span>
 
   <h4>Scenario 3 - Raise me to the power of 6 then shorthand</h4>
-  <span>{{ 13 | power: 6 | shorthand }}</span>
+  <span>13 &rarr; {{ 13 | power: 6 | shorthand }}</span>
 </div>
 
 <div class="block">
   <h1>Euro</h1>
 
   <h4>One Million USD in Euros is:</h4>
-  <span>{{ 1000000 | usdToEur | currency: 'EUR' }}</span>
+  <span
+    >{{ 1000000 | currency }} &rarr;
+    {{ 1000000 | usdToEur | currency: 'EUR' }}</span
+  >
 
   <h4>573,983 USD in Euros is:</h4>
-  <span>{{ 573983 | usdToEur | currency: 'EUR' }}</span>
+  <span
+    >{{ 573983 | currency }} &rarr;
+    {{ 573983 | usdToEur | currency: 'EUR' }}</span
+  >
 
   <h4>5,773,983 USD in Euros is then shorthand</h4>
-  <span>{{ 5773983 | usdToEur | shorthand }}</span>
+  <span>
+    {{ 5773983 | currency }} &rarr; {{ 5773983 | usdToEur | shorthand }}</span
+  >
 </div>
