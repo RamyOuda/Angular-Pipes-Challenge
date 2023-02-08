@@ -11,10 +11,10 @@
 <div class="block">
   <h1>Euro</h1>
   <h6>One Million USD in Euros is:</h6>
-  <span>{{ 1000000 | usdToEur }}</span>
+  <span>{{ 1000000 | usdToEur | currency: 'EUR' }}</span>
 
   <h6>573,983 USD in Euros is:</h6>
-  <span>{{ 573983 | usdToEur }}</span>
+  <span>{{ 573983 | usdToEur | currency: 'EUR' }}</span>
 
   <h6>5,773,983 USD in Euros is then shorthand</h6>
   <span>{{ 5773983 | usdToEur | shorthand }}</span>
