@@ -1,3 +1,13 @@
-# Angular-Pipes-Challenge
+# Angular Pipes Challenge
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/angular-ivy-sbgkps)
+Practiced creating and implimenting both custom and built-in Angular pipes!
+
+## Custom Pipes
+
+- PowerPipe
+- ShorthandPipe
+- usdToEurPipe
+
+## Built-In Pipes
+
+- CurrencyPipe
