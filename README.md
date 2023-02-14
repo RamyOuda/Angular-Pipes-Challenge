@@ -1,12 +1,12 @@
 # Angular Pipes Challenge
 
-Practiced creating and implimenting both custom and built-in Angular pipes!
+Created and implimented custom standalone Angular pipes!
 
 ## Custom Pipes
 
 - PowerPipe
 - ShorthandPipe
-- usdToEurPipe
+- UsdToEurPipe
 
 ## Built-In Pipes
 
