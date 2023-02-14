@@ -6,6 +6,6 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class PowerPipe implements PipeTransform {
   transform(value: number, power: number): number {
-    return Math.pow(value, power);
+    return value ** power;
   }
 }
